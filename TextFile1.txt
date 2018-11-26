@@ -1,0 +1,24 @@
+CREATE TABLE [dbo].[Teams] (
+    [tno]   NCHAR (10)    NOT NULL,
+    [tname] NCHAR (10)    NOT NULL,
+    [tkey]  NVARCHAR (50) NOT NULL
+);
+
+CREATE TABLE [dbo].[TU] (
+    [tno]      NCHAR (10)    NOT NULL,
+    [username] NVARCHAR (50) NOT NULL
+);
+
+CREATE TABLE [dbo].[Users] (
+    [username] NVARCHAR (50) NOT NULL,
+    [password] NVARCHAR (50) NOT NULL,
+    [tel]      NVARCHAR (50) NOT NULL,
+    [email]    NVARCHAR (50) NOT NULL,
+    [name]     NVARCHAR (50) NOT NULL,
+    [key1]     NCHAR (10)    NOT NULL,
+    [key2]     NCHAR (10)    NULL,
+    [key3]     NCHAR (10)    NULL,
+    [key4]     NCHAR (10)    NULL,
+    [tno]      NCHAR (10)    NULL
+);
+
